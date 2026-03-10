@@ -57,8 +57,9 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 bg-[#1a0b8c] overflow-hidden">
         {/* Abstract Wave Background (Simulated with gradients) */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-[#3b25d3]/40 via-transparent to-transparent" />
-        <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white/5 to-transparent rounded-full blur-3xl translate-x-1/3 -translate-y-1/3" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-[#3b25d3]/40 via-transparent to-transparent animate-pulse-slow" />
+        <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white/5 to-transparent rounded-full blur-3xl translate-x-1/3 -translate-y-1/3 animate-blob" />
+        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-[#3b25d3]/30 to-transparent rounded-full blur-3xl -translate-x-1/3 translate-y-1/3 animate-blob" style={{ animationDelay: '5s' }} />
 
         <div className="max-w-7xl mx-auto px-6 relative z-10 grid md:grid-cols-2 gap-12 items-center">
           <div className="text-white max-w-xl">
@@ -77,12 +78,12 @@ export default function Home() {
           {/* Floating UI Elements */}
           <div className="relative h-[400px] hidden md:block">
             {/* API Integration Pill */}
-            <div className="absolute top-4 right-20 bg-white/10 backdrop-blur-md border border-white/20 text-white px-4 py-2 rounded-full flex items-center gap-2 text-sm font-medium shadow-xl">
+            <div className="absolute top-4 right-20 bg-white/10 backdrop-blur-md border border-white/20 text-white px-4 py-2 rounded-full flex items-center gap-2 text-sm font-medium shadow-xl animate-float">
               <Code className="w-4 h-4" /> API Integration
             </div>
 
             {/* Checklist Card */}
-            <div className="absolute top-20 left-10 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-5 w-64 shadow-2xl">
+            <div className="absolute top-20 left-10 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-5 w-64 shadow-2xl animate-float-delayed">
               <div className="space-y-4">
                 <div className="flex items-center justify-between text-white">
                   <div>
@@ -109,7 +110,7 @@ export default function Home() {
             </div>
 
             {/* Signature Card */}
-            <div className="absolute top-16 right-0 bg-[#2d1bba] border border-white/10 rounded-2xl p-4 w-56 shadow-2xl">
+            <div className="absolute top-16 right-0 bg-[#2d1bba] border border-white/10 rounded-2xl p-4 w-56 shadow-2xl animate-float" style={{ animationDelay: '1s' }}>
               <div className="flex items-center gap-3 mb-3">
                 <div className="w-8 h-8 rounded-full bg-blue-300 overflow-hidden relative">
                   <Image src="https://picsum.photos/seed/john/100/100" alt="John" fill className="object-cover" />
@@ -125,7 +126,7 @@ export default function Home() {
             </div>
 
             {/* Map Card */}
-            <div className="absolute bottom-10 right-10 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 w-64 shadow-2xl">
+            <div className="absolute bottom-10 right-10 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 w-64 shadow-2xl animate-float" style={{ animationDelay: '2s' }}>
               <div className="flex items-center justify-between mb-4">
                 <div className="text-white text-sm font-medium leading-tight">
                   Employment<br/>Authorized
@@ -139,7 +140,7 @@ export default function Home() {
             </div>
 
             {/* Small Pill */}
-            <div className="absolute bottom-4 left-20 bg-[#2d1bba] border border-white/10 rounded-full p-2 pr-4 flex items-center gap-3 shadow-xl">
+            <div className="absolute bottom-4 left-20 bg-[#2d1bba] border border-white/10 rounded-full p-2 pr-4 flex items-center gap-3 shadow-xl animate-float-delayed" style={{ animationDelay: '1.5s' }}>
               <div className="w-8 h-8 rounded-full bg-blue-400 overflow-hidden relative border-2 border-white">
                 <Image src="https://picsum.photos/seed/sarah/100/100" alt="Sarah" fill className="object-cover" />
               </div>
@@ -291,7 +292,8 @@ export default function Home() {
               </div>
               
               {/* Background Decoration */}
-              <div className="absolute -bottom-20 -right-20 w-64 h-64 bg-blue-600/20 rounded-full blur-3xl" />
+              <div className="absolute -bottom-20 -right-20 w-64 h-64 bg-blue-500/30 rounded-full blur-3xl animate-blob" />
+              <div className="absolute -top-20 -left-20 w-64 h-64 bg-indigo-500/20 rounded-full blur-3xl animate-blob" style={{ animationDelay: '2s' }} />
             </div>
 
             {/* Card 2: Electronic Onboarding */}
@@ -419,7 +421,8 @@ export default function Home() {
               </div>
               
               {/* Background Decoration */}
-              <div className="absolute top-0 right-0 w-48 h-48 bg-blue-600/20 rounded-full blur-3xl" />
+              <div className="absolute top-0 right-0 w-48 h-48 bg-blue-500/30 rounded-full blur-3xl animate-blob" />
+              <div className="absolute bottom-0 left-0 w-48 h-48 bg-indigo-500/20 rounded-full blur-3xl animate-blob" style={{ animationDelay: '3s' }} />
             </div>
 
           </div>
@@ -460,7 +463,8 @@ export default function Home() {
 
           {/* Connect APIs Banner */}
           <div className="bg-[#1a0b8c] rounded-3xl p-12 text-white relative overflow-hidden flex flex-col justify-center">
-            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-[#3b25d3]/60 via-transparent to-transparent" />
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-[#3b25d3]/60 via-transparent to-transparent animate-pulse-slow" />
+            <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white/10 to-transparent rounded-full blur-3xl translate-x-1/3 -translate-y-1/3 animate-blob" />
             
             <div className="relative z-10">
               <h2 className="text-4xl font-bold mb-4">Connect with Our APIs</h2>
@@ -509,7 +513,9 @@ export default function Home() {
 
       {/* Contact Banner */}
       <section className="bg-[#1a0b8c] py-24 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-[#3b25d3]/60 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-[#3b25d3]/60 via-transparent to-transparent animate-pulse-slow" />
+        <div className="absolute top-1/2 left-0 w-[500px] h-[500px] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white/5 to-transparent rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2 animate-blob" />
+        <div className="absolute top-1/2 right-0 w-[500px] h-[500px] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-400/10 to-transparent rounded-full blur-3xl translate-x-1/2 -translate-y-1/2 animate-blob" style={{ animationDelay: '4s' }} />
         <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Contact Our Team</h2>
           <p className="text-blue-100/80 mb-8 max-w-md mx-auto">
