@@ -1,6 +1,9 @@
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,300,400&display=swap');
 @import "tailwindcss";
 
 @theme {
+  --font-sans: 'Satoshi', sans-serif;
+  
   --animate-blob: blob 15s infinite;
   --animate-float: float 6s ease-in-out infinite;
   --animate-float-delayed: float 6s ease-in-out 3s infinite;

@@ -28,7 +28,7 @@ export default function Home() {
     <div className="min-h-screen bg-[#f8f9fa] font-sans text-slate-900 selection:bg-blue-200">
       {/* Navbar */}
       <nav className="absolute top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-6 max-w-7xl mx-auto text-white">
-        <div className="flex items-center gap-2 font-bold text-xl tracking-tight">
+        <div className="flex items-center gap-2 font-medium text-xl tracking-tight">
           <div className="w-6 h-6 bg-white rounded-sm flex items-center justify-center">
             <div className="w-3 h-3 bg-[#1a0b8c] rounded-sm" />
           </div>
